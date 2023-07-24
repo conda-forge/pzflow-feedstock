@@ -22,11 +22,11 @@ requirements:
   run:
     # I don't think any of these constraints are real but here I am
     - python >=3.8
-    - jax
-    - optax =0.1.4
-    - pandas >=1.1,<2a0
-    - dill
-    - tqdm
+    - jax >=0.4.2,<0.5
+    - optax >=0.1.4,<0.2
+    - pandas >=1.1
+    - dill >=0.3.6,<0.4
+    - tqdm >=4.64.1,<5
 
 test:
   imports:
