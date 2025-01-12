@@ -12,16 +12,16 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
     - poetry-core >=1.0.0
   run:
     # I don't think any of these constraints are real but here I am
-    - python >=3.8
+    - python >={{ python_min }}
     - jax >=0.4.2,<0.5
     - optax >=0.1.4,<0.2
     - pandas >=1.1
@@ -33,6 +33,7 @@ test:
     - pzflow
   requires:
     - pip
+    - python {{ python_min }}
   commands:
     - pip check
 
