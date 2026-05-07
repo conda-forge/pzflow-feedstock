@@ -1,5 +1,5 @@
 {% set name = "pzflow" %}
-{% set version = "3.4.0" %}
+{% set version = "4.0.0" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/jfcrenshaw/pzflow/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: a2897bba5d2862cfb6755aaa73f75f3b4bf7f4f07d2e51ff4f16e0c8e2b4894b
+  sha256: 05f7bdce78e68606e187d925c963aba692e3e9e1404fe6ac31be543587624550
 
 build:
   noarch: python
